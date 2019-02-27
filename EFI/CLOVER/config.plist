@@ -53,8 +53,6 @@
 			<dict>
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FixHeaders</key>
-				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -547,6 +545,8 @@
 				<string>#MCFG</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>Generate</key>
@@ -946,6 +946,8 @@
 				<data>
 				BgAmCgEDAwMAAAACAAAwAQAAYAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -962,11 +964,13 @@
 				<data>
 				AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
+				/wAAAAEAAABAAAAA/wAAAAEAAABAAAAA
 				</data>
 			</dict>
 			<dict>
@@ -978,6 +982,8 @@
 				<data>
 				RiV1VCUwNHgA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleBacklight</string>
 				<key>Replace</key>
